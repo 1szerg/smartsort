@@ -8,5 +8,5 @@ import java.util.Set;
  * at 8/4/14 12:40 PM
  */
 public interface FileReader {
-    public Set<String> readFile(File file);
+    Set<String> readFile(File file);
 }

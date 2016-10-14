@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="smartsort">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/prod/smartsort.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
