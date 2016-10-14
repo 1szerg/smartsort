@@ -1,0 +1,13 @@
+Vert.x is Polyglot
+
+Vert.x is polyglot meaning you can implement the components you want Vert.x to execute (called "Verticles") in many different languages. Vertx. can execute Java, JavaScript, Ruby, Python and Groovy. Support for Scala and Clojure should be arriving soon (it was originally planned for v. 3.0 but I am not sure if they got it in). I have also seen rumors about support for PHP and Ceylon.
+
+Vert.x can even deploy verticles written in different languages into the same application. This gives you the freedom to choose the most suitable language for each job. Some tasks might be easier to implement using a functional language like Scala. Others easier in a more traditionally imperative language like Java.
+
+The polyglot nature of Vert.x also gives you the freedom to experiment with new languages to see if they suit your type of applications better. You can write the same tasks in different languages and compare.
+
+If you are new to Vert.x but know one of the programming languages Vert.x can execute, you just have to focus on learning Vert.x and not a new programming language too. This makes Vert.x easier to learn regardless of what programming language you already know (as long as it is a language that runs on Vert.x).
+
+In the same way Vert.x makes it easier to learn a new programming language. You don't have to learn both a language and a new platform (e.g. Ruby and Rails) from scratch. The internal concepts of Vert.x are the same, even if you write verticles in different languages. That means you just have to focus on the new language, and not the whole platform.
+
+Finally, if you choose to change language, Vert.x gives you the freedom to make a slow transition from one language to another. You can keep all your old code and still use it in the same application. You can then write new verticles in the new language, as well as slowly rewrite old verticles in the new language.

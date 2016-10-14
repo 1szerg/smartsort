@@ -1,0 +1,20 @@
+Volatile Variables
+
+Java volatile variables are variables that are always read directly from main memory. When a new value is assigned to a volatile variable the value is always written immediately to main memory. This guarantees that the latest value of a volatile variable is always visible to other threads running on other CPUs. Other threads will read the value of the volatile from main memory every time, instead of from e.g. the CPU cache of the CPU the threads are running on.
+
+Volatile variables are non-blocking. The writing of a value to a volatile variable is an atomic operation. It cannot be interrupted. However, a read-update-write sequence performed on a volatile variable is not atomic. Thus, this code may still lead to race conditions if performed by more than one thread:
+
+volatile myVar = 0;
+
+...
+int temp = myVar;
+temp++;
+myVar = temp;
+First the value of the volatile variable myVar is read from main memory into a temp variable. Then the temp variable is incremented by 1. Then the value of the temp variable is assigned to the volatile myVar variable which means it will be written back to main memory.
+
+If two threads execute this code and both of them read the value of myVar, add one to it and write the value back to main memory, then you risk that instead of 2 being added to the myVar variable, only 1 will be added (e.g. both threads read the value 19, increment to 20, and write 20 back).
+
+You might think you won't write code like above, but in practice the above code is equivalent to this:
+
+myVar++;
+When executed, the value of myVar is read into a CPU register or the local CPU cache, one is added, and then the value from the CPU register or CPU cache is written back to main memory.

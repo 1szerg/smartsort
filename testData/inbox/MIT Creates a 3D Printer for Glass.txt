@@ -1,0 +1,9 @@
+Mediated Matters, MIT's Department of Mechanical Engineering, and MIT's Glass Lab have teamed up to create something quite cool, even if it runs at 1,900°F.
+
+Using the foundations of 3D printing and applying them to the ancient art of glass production, the team at MIT has created a glass printing machine called G3DP. 
+
+The machine works like this: the upper part is essentially a kiln, where glass is loaded in and heated up to 1,900°F. Below that sits an alumina-zircon-silica nozzle?, which can programmed to make the same intricate moves in X-, Y-, and Z-space familiar to anyone who has seen a 3D printer in action. Shapes can be designed on the computer, and the G3DP will execute them.
+
+
+
+In a paper scheduled to be published in the September 2015 issue of? 3D Printing and Additive Manufacturing, the team outlines why the process could be useful more than simply creating beautiful glass sculptures: the precision the machine is able to work at means there's potential applications in product and architectural design as well.In the meantime, watching the machine at work is hypnotizing, even if there's still something to be said for the pure joy of seeing a master (human) glassblower at work.

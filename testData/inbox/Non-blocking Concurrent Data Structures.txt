@@ -1,0 +1,9 @@
+Non-blocking Concurrent Data Structures
+
+In a multithreaded system, threads usually communicate via some kind of data structure. Such data structures can be anything from simple variables to more advanced data structures like queues, maps, stacks etc. To facilitate correct, concurrent access to the data structures by multiple threads, the data structures must be guarded by some concurrent algorithm. The guarding algorithm is what makes the data structure a concurrent data structure.
+
+If the algorithm guarding a concurrent data structure is blocking (uses thread suspension), it is said to be a blocking algorithm. The data structure is thus said to be a blocking, concurrent data structure.
+
+If the algorithm guarding a concurrent data structure is non-blocking, it is said to be a non-blocking algorithm. The data structure is thus said to be a non-blocking, concurrent data structure.
+
+Each concurrent data structure is designed to support a certain method of communication. Which concurrent data structure you can use thus depends on your communication needs. I will cover some non-blocking concurrent data structures in the following sections, and explain in what situations they can be used. The explanation of how these non-blocking data structures work should give you an idea about how non-blocking data structures can be designed and implemented.
